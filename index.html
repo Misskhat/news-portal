@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>New-Paper</title>
+</head>
+
+<body class="container m-auto">
+    <header>
+        <nav class="my-2">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <button>
+                        <a class="text-xl"><span
+                                class="p-2 border rounded bg-sky-500 text-white bg-blue">News</span>Portal</a>
+                    </button>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-square btn-ghost hover:border-none">
+                        <img src="./resources/avatarImage.png" alt="Use Image" srcset="" />
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr />
+    <!-- catagory section -->
+    <section id="catagorySection" class="text-white p-2 h-10 bg-slate-400 rounded mb-5">
+        <div id="category_container" class="flex gap-12 justify-center items-center">
+            <!-- <button>Bangladesh</button>  demo button-->
+        </div>
+    </section>
+    <!-- search section -->
+    <section>
+        <div class="flex mb-2">
+            <input type="text" placeholder="Type here" class="border-2 rounded p-2 w-full" />
+            <button id="catagorySearchButton" class="btn px-10">Search</button>
+        </div>
+    </section>
+    <!-- content section -->
+    <section>
+        <div class="card card-side bg-base-100 shadow-xl">
+            <figure class="w-3/6">
+                <img src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp" alt="Movie" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">New movie is released!</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic esse culpa dolor rerum tenetur aliquid ex facere repellat tempora aperiam doloribus neque perferendis, aliquam maiores molestias eaque fuga quasi sed praesentium excepturi! Blanditiis, nulla. Minus laudantium cumque nam adipisci asperiores eaque aspernatur tempore atque architecto, nesciunt ea necessitatibus quibusdam porro officiis voluptates distinctio odio fugit velit enim ratione ullam quod? Quas inventore similique debitis voluptatibus consequuntur explicabo qui, et cum modi. Expedita incidunt, dicta hic error corporis nulla culpa recusandae nostrum illo deleniti vel itaque iusto. Alias adipisci, neque harum placeat quisquam suscipit, iusto deserunt voluptatibus error, officia ad!
+                </p>
+                <div class="flex justify-between p-2">
+                    <div class="flex items-center w-2/3 justify-around">
+                        <!-- ---------divider arrow and other section---------- -->
+                        <div class="flex items-center">
+                            <img src="./resources/avatarImage.png" alt="" class="w-14" />
+                            <div>
+                                <p>Jane Copper</p>
+                                <p id="postDate">Jan 10, 2022</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./resources/eyeIcon.jpg" alt="" class="w-14" />
+                            <p id="viewCount" class="text-bold">1.5 M</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                    checked="checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ---------divider arrow and other section---------- -->
+                    <div class="card-actions flex justify-end items-center">
+                        <button class="flex justify-end">
+                            <img src="./resources/next.png" alt="" class="w-12" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
